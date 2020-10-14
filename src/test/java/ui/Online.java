@@ -50,8 +50,8 @@ public class Online extends PageObject {
 
     }
     public void priceMachine() {
-        $("//input[@id=\"inp1_r_cost\"]").type("100");
-        $("//input[@id=\"inp2_r_cost\"]").type("150");
+        $("//input[@id=\"inp1_r_cost\"]").type("30");
+        $("//input[@id=\"inp2_r_cost\"]").type("320");
     }
     public void clickButton() {
         $("//button[contains(text(), \"Применить\")]").click();
