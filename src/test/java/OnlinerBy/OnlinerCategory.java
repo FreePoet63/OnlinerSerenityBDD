@@ -31,11 +31,11 @@ public class OnlinerCategory  {
         page.openParamProd();
         page.openSetProd();
         page.openLabelProd();
-        page.openCoffee();
         page.typeCoffee();
         page.tunCoffee();
         page.priceMachine();
         page.clickButton();
+
 
     }
 

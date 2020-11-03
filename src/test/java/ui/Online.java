@@ -26,11 +26,11 @@ public class Online extends PageObject {
     }
     public void openSet() {
         List<WebElement> elementius = getDriver().findElements(By.xpath("//ul[@id=\"ul_ti1\"]/li"));
-        elementius.get(1).click();
+        elementius.get(0).click();
     }
     public void openLabel() {
         $("//input[@id=\"inp1_f1\"]").type("0.6");
-        $("//input[@id=\"inp2_f1\"]").type("1.2");
+        $("//input[@id=\"inp2_f1\"]").type("2");
     }
     public void openField() {
         $("//input[@id=\"inp1_ti3\"]").type("2");
@@ -46,7 +46,7 @@ public class Online extends PageObject {
     }
     public void tunCoffee() {
         List<WebElement> elCoffee = getDriver().findElements(By.xpath("//ul[@id=\"ul_v4\"]/li"));
-        elCoffee.get(3).click();
+        elCoffee.get(2).click();
 
     }
     public void priceMachine() {
