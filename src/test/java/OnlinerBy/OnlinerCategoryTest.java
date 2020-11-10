@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 
 @RunWith(SerenityRunner.class)
-public class OnlinerCategory  {
+public class OnlinerCategoryTest {
 
     @Managed(driver = "chrome")
     WebDriver driver;

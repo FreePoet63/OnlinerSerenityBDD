@@ -17,7 +17,7 @@ import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.hasItem;
 
 @RunWith(SerenityRunner.class)
-public class OZCategory {
+public class OZCategoryTest {
     private Actor Natasha = Actor.named("Natasha");
 
     @Managed
