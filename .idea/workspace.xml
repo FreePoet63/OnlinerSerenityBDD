@@ -24,9 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18b4ca36-147b-4a6f-872e-9aca59b489a6" name="Default Changelist" comment="commit 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serenity.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/serenety.Config" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenety.Config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
     <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OZ.byAtlas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -78,7 +76,7 @@
       <recent name="models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OnlinerCategoryTest.openOnliner">
+  <component name="RunManager" selected="JUnit.OnlinerCategoryTest">
     <configuration name="OZCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OnlinerSerenityBDD" />
       <extension name="coverage">
@@ -159,9 +157,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OnlinerCategoryTest.openOnliner" />
         <item itemvalue="JUnit.OnlinerCategoryTest" />
         <item itemvalue="JUnit.OZCategoryTest" />
+        <item itemvalue="JUnit.OnlinerCategoryTest.openOnliner" />
         <item itemvalue="JUnit.OZCategoryTest.openTheWebPage" />
         <item itemvalue="JUnit.OnlinerCategoryTest.openShopBy" />
       </list>
@@ -288,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605030284916</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="commit 1">
+      <created>1605373912232</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605373912232</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,26 +346,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1602664049588" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605372541195">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605374399522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605372541195" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1605373751679">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605374399522" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1605374583808">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605373751679" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1605373751679">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605374583808" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1605374583808">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605373751679" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1605373751679">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605374583808" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1605374583808">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605373751679" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1605373751679">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605374583808" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1605374583808">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605373751679" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605374583808" />
     <state width="1537" height="270" key="GridCell.Tab.1.bottom" timestamp="1597743317248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -393,10 +398,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1597649748117" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605030294385">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605373919570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605030294385" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605373919570" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602662991163">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
