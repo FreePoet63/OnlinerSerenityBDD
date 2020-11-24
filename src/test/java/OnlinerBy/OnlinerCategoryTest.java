@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 @RunWith(SerenityRunner.class)
 public class OnlinerCategoryTest {
 
-    @Managed(driver = "chrome")
+    @Managed(driver = "firefox")
     WebDriver driver;
 
     @Steps
