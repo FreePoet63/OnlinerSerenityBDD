@@ -7,53 +7,48 @@ public class CatalogHomePage extends PageObject {
     Online online;
 
     @Step
-    public void openOnline() {
-        online.open();
+    public void openCatalog() {
+        online.openCatalog();
     }
+
     @Step
-    public void onlineProduct() {
+    public void openProduct() {
         online.openProduct();
     }
+
     @Step
-    public void onlineOpenProduct() {
-        online.openProd();
+    public void chooseKettle() {
+        online.chooseKettle();
     }
+
     @Step
-    public void openParamProd() {
-        online.paramProd();
+    public void selectLitre() {
+        online.selectLitre();
     }
+
     @Step
-    public void openSetProd() {
-        online.openSet();
+    public void housingMaterial() {
+        online.housingMaterial();
     }
+
     @Step
-    public void openLabelProd() {
-        online.openLabel();
+    public void additionalFeatures() {
+        online.additionalFeatures();
     }
+
     @Step
-    public void openField() {
-        online.openField();
+    public void priceKettle() {
+        online.priceKettle();
     }
-    @Step
-    public void openCoffee() {
-        online.openCoffee();
-    }
-    @Step
-    public void typeCoffee() {
-        online.typeCoffee();
-    }
-    @Step
-    public void tunCoffee() {
-        online.tunCoffee();
-    }
-    @Step
-    public void priceMachine() {
-        online.priceMachine();
-    }
+
     @Step
     public void clickButton() {
         online.clickButton();
     }
 
+    @Step
+    public void resultSearchKettle() {
+        online.listKettle();
+    }
 }
 

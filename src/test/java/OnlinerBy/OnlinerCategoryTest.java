@@ -10,7 +10,6 @@ import ui.CatalogHomePage;
 
 import java.util.concurrent.TimeUnit;
 
-
 @RunWith(SerenityRunner.class)
 public class OnlinerCategoryTest {
 
@@ -20,24 +19,19 @@ public class OnlinerCategoryTest {
     @Steps
     CatalogHomePage page;
 
-
     @Test
     public void openOnliner() {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         driver.get("https://Oz.by");
-        page.onlineProduct();
-        page.onlineOpenProduct();
-        page.openParamProd();
-        page.openSetProd();
-        page.openLabelProd();
-        page.typeCoffee();
-        page.tunCoffee();
-        page.priceMachine();
+        page.openCatalog();
+        page.openProduct();
+        page.chooseKettle();
+        page.selectLitre();
+        page.housingMaterial();
+        page.additionalFeatures();
+        page.priceKettle();
         page.clickButton();
-
-
+        page.resultSearchKettle();
     }
-
-
 }

@@ -2,12 +2,10 @@ package ui;
 
 import net.serenitybdd.screenplay.targets.Target;
 
-
 public class OzPage {
     public static Target book(String book) {
         return Target.the("new books")
                 .locatedBy("/html/body/div[1]/div/div[2]/div[1]/div[1]/div/div/ul/li[3]/a");
-
     }
 
     public static Target seeBook(String book) {
@@ -33,5 +31,4 @@ public class OzPage {
     public static Target SEARCH_RESULT_MURAKAMI = Target
             .the("books Murakami")
             .locatedBy("//ul[@id=\"goods-table\"]");
-
 }

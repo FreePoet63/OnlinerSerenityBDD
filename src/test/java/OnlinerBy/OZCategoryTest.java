@@ -29,6 +29,7 @@ public class OZCategoryTest {
     public void openbrowseTheWebNatasha() {
         Natasha.can(BrowseTheWeb.with(browser));
     }
+
     @Test
     public void openTheWebPage() {
         Natasha.attemptsTo(NavigateToOz.books(Книги));

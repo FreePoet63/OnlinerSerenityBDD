@@ -20,8 +20,6 @@ public class NavigateToAutor implements Task {
         return Instrumented.instanceOf(NavigateToAutor.class).withProperties(autor);
     }
 
-
-
     @Override
     @Step("{0} navigates the #autor")
     public <T extends Actor> void performAs(T actor) {
@@ -31,10 +29,6 @@ public class NavigateToAutor implements Task {
                 .thenHit(Keys.ENTER),
                 Click.on(OzPage.seeAutor(autor)),
                 Click.on(OzPage.takeBook(autor)),
-                Click.on(OzPage.takeBookMurakami(autor))
-        );
+                Click.on(OzPage.takeBookMurakami(autor)));
     }
-
-
-
 }
