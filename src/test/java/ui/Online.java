@@ -28,8 +28,9 @@ public class Online extends PageObject {
     }
 
     public void chooseKettle() {
-        List<WebElement> elementius = getDriver().findElements(By.xpath("//ul[@id=\"ul_ti1\"]/li"));
-        elementius.get(0).click();
+        /*List<WebElement> elementius = getDriver().findElements(By.xpath("//ul[@id=\"ul_ti1\"]/li"));
+        elementius.get(0).click();*/
+        $("//a[text()=\"Чайник\"]").click();
     }
 
     public void selectLitre() {
@@ -39,7 +40,7 @@ public class Online extends PageObject {
 
     public void housingMaterial() {
         List<WebElement> elementaw = getDriver().findElements(By.xpath("//ul[@id=\"ul_ti2\"]/li"));
-        elementaw.get(0).click();
+        elementaw.get(1).click();
     }
 
     public void additionalFeatures() {

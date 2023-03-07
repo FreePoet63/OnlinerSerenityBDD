@@ -5,12 +5,12 @@ import net.serenitybdd.screenplay.targets.Target;
 public class OzPage {
     public static Target book(String book) {
         return Target.the("new books")
-                .locatedBy("/html/body/div[1]/div/div[2]/div[1]/div[1]/div/div/ul/li[3]/a");
+                .locatedBy("//a[text()=\"Книги\"]");
     }
 
     public static Target seeBook(String book) {
         return Target.the( "best sellers")
-                .locatedBy("/html/body/div[1]/div/div[3]/main/div[2]/div[2]/div/div[1]/div[1]/div[1]/a/span[2]");
+                .locatedBy("//span[text()=\"Бестселлеры\"]");
     }
 
     public static Target seeAutor(String autor) {
@@ -25,7 +25,7 @@ public class OzPage {
 
     public static Target takeBookMurakami(String autor) {
         return Target.the( "button")
-                .locatedBy("/html/body/div[1]/div/div[3]/div/div/div[1]/form/div[12]/button");
+                .locatedBy("//button[text()=\"Применить\"]");
     }
 
     public static Target SEARCH_RESULT_MURAKAMI = Target

@@ -22,17 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18b4ca36-147b-4a6f-872e-9aca59b489a6" name="Default Changelist" comment="commit 1">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="18b4ca36-147b-4a6f-872e-9aca59b489a6" name="Default Changelist" comment="newSerenity">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OnlinerBy/OZCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OnlinerBy/OZCategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/OnlinerBy/OnlinerCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OnlinerBy/OnlinerCategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/CatalogHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/CatalogHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/NavigateToAutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/NavigateToAutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/NavigateToOz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/NavigateToOz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui/Online.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/Online.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui/OzPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/OzPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/TheBooksMurakami.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/TheBooksMurakami.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +72,7 @@
       <recent name="models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OZCategoryTest">
+  <component name="RunManager" selected="JUnit.OnlinerBy in OnlinerSerenityBDD">
     <configuration name="OZCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OnlinerSerenityBDD" />
       <extension name="coverage">
@@ -105,6 +100,20 @@
       <option name="MAIN_CLASS_NAME" value="OnlinerBy.OZCategoryTest" />
       <option name="METHOD_NAME" value="openTheWebPage" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnlinerBy in OnlinerSerenityBDD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlinerSerenityBDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OnlinerBy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OnlinerBy" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,29 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OnlinerCategoryTest.openShopBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OnlinerSerenityBDD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="OnlinerBy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="OnlinerBy" />
-      <option name="MAIN_CLASS_NAME" value="OnlinerBy.OnlinerCategoryTest" />
-      <option name="METHOD_NAME" value="openShopBy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OnlinerBy in OnlinerSerenityBDD" />
+        <item itemvalue="JUnit.OZCategoryTest.openTheWebPage" />
         <item itemvalue="JUnit.OZCategoryTest" />
         <item itemvalue="JUnit.OnlinerCategoryTest.openOnliner" />
         <item itemvalue="JUnit.OnlinerCategoryTest" />
-        <item itemvalue="JUnit.OZCategoryTest.openTheWebPage" />
-        <item itemvalue="JUnit.OnlinerCategoryTest.openShopBy" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606379684053</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="newSerenity">
+      <created>1624300250469</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1624300250470</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,7 +340,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit 2" />
     <MESSAGE value="commit 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 1" />
+    <MESSAGE value="newSerenity" />
+    <option name="LAST_COMMIT_MESSAGE" value="newSerenity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
