@@ -6,10 +6,16 @@ import net.serenitybdd.screenplay.questions.Text;
 
 import java.util.List;
 
-public class TheBooksMurakami implements Question<List<String>>{
+/**
+ * TheCoffee class
+ *
+ * @author razlivinsky
+ * @since 15.01.2025
+ */
+public class TheCoffee implements Question<List<String>>{
 
-    public static Question<List<String>>displayed() {
-        return new TheBooksMurakami();
+    public static Question<List<String>> displayed() {
+        return new TheCoffee();
     }
 
     @Override

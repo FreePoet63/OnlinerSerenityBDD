@@ -8,33 +8,34 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import ui.NavigateToAutor;
-import ui.NavigateToOz;
-import ui.TheBooksMurakami;
+import ui.NavigateToCatalog;
+import ui.NavigateToCoffee;
+import ui.TheCoffee;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.hasItem;
 
 @RunWith(SerenityRunner.class)
-public class OZCategoryTest {
+public class OzCoffeeTest {
     private Actor Natasha = Actor.named("Natasha");
 
     @Managed
     WebDriver browser;
-    private String Книги;
-    private String Мураками;
+    private String Кофе;
+    private String fromPrice = "10";
+    private String toPrice = "27";
 
     @Before
-    public void openbrowseTheWebNatasha() {
+    public void openBrowserTheWebNatasha() {
         Natasha.can(BrowseTheWeb.with(browser));
+        browser.manage().window().maximize();
     }
 
     @Test
-    public void openTheWebPage() {
-        Natasha.attemptsTo(NavigateToOz.books(Книги));
-        Natasha.attemptsTo(NavigateToAutor.of("мураками"));
-        Natasha.should(seeThat(TheBooksMurakami.displayed(), hasItem(containsString("Норвежский лес"))));
+    public void openTheWebPage() throws InterruptedException {
+        Natasha.attemptsTo(NavigateToCatalog.products(Кофе));
+        Natasha.attemptsTo(NavigateToCoffee.of(Кофе, fromPrice, toPrice));
+        Natasha.should(seeThat(TheCoffee.displayed(), hasItem(containsString("Lavazza. Qualita Rossa"))));
     }
 }
-

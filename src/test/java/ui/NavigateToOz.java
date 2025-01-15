@@ -8,9 +8,11 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Step;
 
+import static ui.OzPage.COOKIE_BANNER_CLOSE_BUTTON;
+
 public class NavigateToOz implements Task {
     private String book;
-    Online online;
+    OzPage online;
 
     public NavigateToOz (String book) {
         this.book = book;
@@ -25,6 +27,7 @@ public class NavigateToOz implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Open.browserOn(online),
+                Click.on(COOKIE_BANNER_CLOSE_BUTTON),
                 Click.on(OzPage.book(book)),
                 Click.on(OzPage.seeBook(book)));
     }
