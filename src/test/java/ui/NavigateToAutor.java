@@ -8,8 +8,11 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.JavaScriptClick;
 import net.serenitybdd.screenplay.actions.Scroll;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.Keys;
+
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class NavigateToAutor implements Task {
     private String autor;
@@ -32,6 +35,7 @@ public class NavigateToAutor implements Task {
                 Click.on(OzPage.seeAutor(autor)),
                 Click.on(OzPage.takeBook(autor)),
                 Scroll.to(OzPage.takeProduct(autor)),
-                JavaScriptClick.on(OzPage.takeProduct(autor)));
+                JavaScriptClick.on(OzPage.takeProduct(autor)),
+                WaitUntil.the(OzPage.SEARCH_RESULT_PRODUCT, isVisible()).forNoMoreThan(6).seconds());
     }
 }
