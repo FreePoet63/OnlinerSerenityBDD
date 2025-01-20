@@ -1,13 +1,15 @@
 package OnlinerBy;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.thucydides.core.annotations.Managed;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import ui.NavigateToAutor;
 import ui.NavigateToOz;
 import ui.TheBooksMurakami;
@@ -21,12 +23,13 @@ public class OzBookTest {
     private Actor Natasha = Actor.named("Natasha");
 
     @Managed
-    WebDriver browser;
     private String Книги;
     private String Мураками;
 
     @Before
     public void openBrowserTheWebNatasha() {
+        WebDriverManager.firefoxdriver().setup();
+        WebDriver browser = new FirefoxDriver();
         Natasha.can(BrowseTheWeb.with(browser));
         browser.manage().window().maximize();
     }

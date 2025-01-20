@@ -1,7 +1,7 @@
 package ui;
 
+import net.serenitybdd.annotations.DefaultUrl;
 import net.serenitybdd.screenplay.targets.Target;
-import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 
 @DefaultUrl("https://Oz.by")

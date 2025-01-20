@@ -1,12 +1,12 @@
 package ui;
 
+import net.serenitybdd.annotations.Step;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
-import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.interactions.Actions;
 
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;

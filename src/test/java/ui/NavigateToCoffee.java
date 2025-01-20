@@ -1,5 +1,6 @@
 package ui;
 
+import net.serenitybdd.annotations.Step;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
@@ -8,8 +9,10 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.JavaScriptClick;
 import net.serenitybdd.screenplay.actions.Scroll;
-import net.thucydides.core.annotations.Step;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
+
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 /**
  * NavigateToCoffee class
@@ -49,6 +52,8 @@ public class NavigateToCoffee implements Task {
                         .into(OzPage.toPrice(toPrice))
                         .thenHit(Keys.ENTER),
                 Scroll.to(OzPage.takeProduct(coffee)),
-                JavaScriptClick.on(OzPage.takeProduct(coffee)));
+                JavaScriptClick.on(OzPage.takeProduct(coffee)),
+                WaitUntil.the(OzPage.SEARCH_RESULT_PRODUCT, isVisible()).forNoMoreThan(12).seconds());
+
     }
 }
