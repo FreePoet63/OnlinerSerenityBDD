@@ -7,7 +7,6 @@ import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.JavaScriptClick;
 import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
@@ -35,7 +34,7 @@ public class NavigateToAutor implements Task {
                 Click.on(OzPage.seeAutor(autor)),
                 Click.on(OzPage.takeBook(autor)),
                 Scroll.to(OzPage.takeProduct(autor)),
-                JavaScriptClick.on(OzPage.takeProduct(autor)),
-                WaitUntil.the(OzPage.SEARCH_RESULT_PRODUCT, isVisible()).forNoMoreThan(12).seconds());
+                Click.on(OzPage.takeProduct(autor)),
+                WaitUntil.the(OzPage.SEARCH_RESULT_PRODUCT, isVisible()).forNoMoreThan(10).seconds());
     }
 }

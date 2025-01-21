@@ -52,8 +52,7 @@ public class NavigateToCoffee implements Task {
                         .into(OzPage.toPrice(toPrice))
                         .thenHit(Keys.ENTER),
                 Scroll.to(OzPage.takeProduct(coffee)),
-                JavaScriptClick.on(OzPage.takeProduct(coffee)),
-                WaitUntil.the(OzPage.SEARCH_RESULT_PRODUCT, isVisible()).forNoMoreThan(12).seconds());
-
+                Click.on(OzPage.takeProduct(coffee)),
+                WaitUntil.the(OzPage.SEARCH_RESULT_PRODUCT, isVisible()).forNoMoreThan(10).seconds());
     }
 }
